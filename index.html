@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Card Hover Animation</title>
+     <link rel="stylesheet" href="styles.css">
+     <!-- Amatuer here hehe -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="imgBx">
+          <img src="pic1.png">
+        </div>
+        <div class="content">
+          <h2>Card One</h2>
+          <p>Lorem ipsum dolor uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img src="pic2.png">
+        </div>
+        <div class="content">
+          <h2>Card Two</h2>
+          <p>Lorem ipsum dolor uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img src="pic3.jpg">
+        </div>
+        <div class="content">
+          <h2>Card Three</h2>
+          <p>Lorem ipsum dolor uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button onclick="getNewColor()" class="btn">🎨</button>
+    <script type="text/javascript">
+      function getNewColor(){
+        var symbols, color;
+        symbols="0123456789ABCDEF";
+        color="#"
+        for(var i=0; i<6; i++){
+          color = color + symbols[Math.floor(Math.random() * 16)]
+        }
+        document.body.style.background = color;
+      }
+    </script>
+  </body>
+</html>

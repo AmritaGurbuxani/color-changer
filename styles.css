@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body{
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
+  font-weight:c 6000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7b878a;
+  padding-top: 10%;
+}
+
+.container{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.container .card{
+  position: relative;
+  max-width: 300px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  height: 215px;
+}
+
+ .imgBx{
+   position: relative;
+   width:260px;
+   height: 260px;
+   top: -60px;
+   left: 20px;
+   z-index: 1;
+   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+ }
+
+.imgBx img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.card:hover{
+  height: 420px;
+}
+
+.content{
+  margin-top: -140px;
+  padding-top: 40%;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .content{
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn{
+  border-radius: 20%;
+  width: 90px;
+  height: 70px;
+  font-size: 25px;
+}
